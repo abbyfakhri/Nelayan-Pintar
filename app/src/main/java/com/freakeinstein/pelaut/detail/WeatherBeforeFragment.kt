@@ -5,11 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.StringRes
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.freakeinstein.pelaut.R
 import com.freakeinstein.pelaut.databinding.FragmentDetailBinding
-import com.google.android.material.tabs.TabLayoutMediator
+import com.freakeinstein.pelaut.databinding.FragmentWeatherBeforeBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -18,14 +17,14 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [DetailFragment.newInstance] factory method to
+ * Use the [WeatherBeforeFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class DetailFragment : Fragment() {
+class WeatherBeforeFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    private lateinit var binding: FragmentDetailBinding
+    private lateinit var binding: FragmentWeatherBeforeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,21 +39,24 @@ class DetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentDetailBinding.inflate(inflater, container, false)
+        binding = FragmentWeatherBeforeBinding.inflate(inflater, container, false)
         // Inflate the layout for this fragment
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        val sectionsPagerAdapter = SectionsPagerAdapter(this)
-
-        binding.viewPager.adapter = sectionsPagerAdapter
-        TabLayoutMediator(binding.tabs, binding.viewPager) { tab, position ->
-            tab.text = resources.getString(TAB_TITLES[position])
-        }.attach()
-
+        binding.rvWeather.layoutManager = LinearLayoutManager(requireActivity())
+        val dataDay = resources.getStringArray(R.array.data_day)
+        val dataImgWeather = resources.obtainTypedArray(R.array.data_img_weather)
+        val dataTemperature = resources.getStringArray(R.array.data_temperature)
+        val dataCondition = resources.getStringArray(R.array.data_condition)
+        val listWeather = ArrayList<WeatherInfo>()
+        for (i in dataDay.indices) {
+            val weather = WeatherInfo(dataDay[i], dataImgWeather.getResourceId(i, -1), dataTemperature[i], dataCondition[i])
+            listWeather.add(weather)
+        }
+        binding.rvWeather.adapter = WeatherDetailAdapter(listWeather)
     }
 
     companion object {
@@ -64,19 +66,12 @@ class DetailFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment DetailFragment.
+         * @return A new instance of fragment WeatherBeforeFragment.
          */
         // TODO: Rename and change types and number of parameters
-
-        @StringRes
-        private val TAB_TITLES = intArrayOf(
-            R.string.tab_text_1,
-            R.string.tab_text_2
-        )
-
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            DetailFragment().apply {
+            WeatherBeforeFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

@@ -2,4 +2,77 @@
     <string name="app_name">Pelaut</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_weather">Hello blank fragment</string>
+    <string name="tab_text_1">7 Hari Terakhir</string>
+    <string name="tab_text_2">7 Hari ke Depan</string>
+
+    <string-array name="data_day">
+        <item>Senin</item>
+        <item>Selasa</item>
+        <item>Rabu</item>
+        <item>Kamis</item>
+        <item>Jumat</item>
+        <item>Sabtu</item>
+        <item>Minggu</item>
+    </string-array>
+
+    <integer-array name="data_img_weather">
+        <item>@drawable/baseline_wb_sunny_70</item>
+        <item>@drawable/hujan</item>
+        <item>@drawable/baseline_wb_sunny_70</item>
+        <item>@drawable/hujan</item>
+        <item>@drawable/baseline_wb_sunny_70</item>
+        <item>@drawable/baseline_wb_sunny_70</item>
+        <item>@drawable/hujan</item>
+    </integer-array>
+
+    <string-array name="data_temperature">
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>40</item>
+        <item>30</item>
+        <item>20</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="data_condition">
+        <item>Bisa Berlayar</item>
+        <item>Tidak Bisa Berlayar</item>
+        <item>Bisa Berlayar</item>
+        <item>Tidak Bisa Berlayar</item>
+        <item>Bisa Berlayar</item>
+        <item>Bisa Berlayar</item>
+        <item>Tidak Bisa Berlayar</item>
+    </string-array>
+
+    <integer-array name="data_img_weather_after">
+        <item>@drawable/baseline_wb_sunny_70</item>
+        <item>@drawable/baseline_wb_sunny_70</item>
+        <item>@drawable/baseline_wb_sunny_70</item>
+        <item>@drawable/hujan</item>
+        <item>@drawable/baseline_wb_sunny_70</item>
+        <item>@drawable/baseline_wb_sunny_70</item>
+        <item>@drawable/hujan</item>
+    </integer-array>
+
+    <string-array name="data_temperature_after">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>20</item>
+        <item>20</item>
+        <item>10</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="data_condition_after">
+        <item>Tidak Bisa Berlayar</item>
+        <item>Tidak Bisa Berlayar</item>
+        <item>Bisa Berlayar</item>
+        <item>Tidak Bisa Berlayar</item>
+        <item>Bisa Berlayar</item>
+        <item>Bisa Berlayar</item>
+        <item>Tidak Bisa Berlayar</item>
+    </string-array>
 </resources>
