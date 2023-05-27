@@ -3,21 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-    <item
-        android:id="@+id/navigation_home"
-        android:icon="@drawable/baseline_home_24"
-        app:showAsAction="always"
-        android:title="home"/>
+
 
     <item
         android:id="@+id/navigation_details"
-        android:icon="@drawable/baseline_grid_view_24"
+        android:icon="@drawable/date_ic"
         android:title="detail"
         app:showAsAction="always"/>
 
     <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_ic_2"
+        app:showAsAction="always"
+        android:title="home"/>
+
+    <item
         android:id="@+id/navigation_account"
-        android:icon="@drawable/baseline_person_24"
+        android:icon="@drawable/profile_ic_2"
         android:title="account"
         app:showAsAction="always"/>
 
