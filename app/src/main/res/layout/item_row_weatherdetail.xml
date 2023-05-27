@@ -23,6 +23,7 @@
         android:layout_marginTop="16dp"
         android:textAppearance="?android:attr/textAppearanceListItemSmall"
         android:textSize="16sp"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/imView"
         app:layout_constraintTop_toTopOf="@+id/imView"
         tools:text="tes" />
@@ -34,6 +35,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/imView"
         app:layout_constraintTop_toTopOf="@+id/tvName"
@@ -46,6 +48,7 @@
         android:layout_marginStart="100dp"
         android:textAppearance="?android:attr/textAppearanceListItemSmall"
         android:textSize="16sp"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/imView"
         app:layout_constraintTop_toTopOf="@+id/tvName"
         tools:text="tes" />
