@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navigation_home"
+    android:id="@+id/mobile_navigation">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.freakeinstein.pelaut.MainFragment"
+        android:label="main fragment"
+        tools:layout="@layout/fragment_main" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.freakeinstein.pelaut.account.AccountFragment"
+        android:label="account fragment"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/navigation_details"
+        android:name="com.freakeinstein.pelaut.detail.DetailFragment"
+        android:label="detail fragment"
+        tools:layout="@layout/fragment_detail" />
+</navigation>
