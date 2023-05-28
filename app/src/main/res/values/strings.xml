@@ -2,4 +2,7 @@
     <string name="app_name">Pelaut</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info">Nelayan pintar merupakan aplikasi innovaif yang menggunakan teknologi terkini untuk memberikan manfaat langsung kepada warga pesisir khususnya nelayan. Aplikasi ini dapat menyediakan informasi cuaca yang akurat, pemetaan lokasi dan notifikasi penting yang membantu nelayan membuat keputusan yang tepat saat akan melaut.
+        <!--Aplikasi ini didesain agar pengguna yang awam dapat dengan mudah menggunakannya. Aplikasi dirancang sedemikianrupa agar dapat memenuhi kebutuhan nelayan yang akan melaut.-->
+    </string>
 </resources>
