@@ -10,9 +10,11 @@ import com.freakeinstein.pelaut.databinding.ItemRowWeatherdetailBinding
 class WeatherDetailAdapter(private val listWeather: ArrayList<WeatherInfo>): RecyclerView.Adapter<WeatherDetailAdapter.ViewHolder>() {
     inner class ViewHolder(val binding: ItemRowWeatherdetailBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(item: WeatherInfo) {
-            binding.tvName.text = item.day
+            binding.tvDay.text = item.day
+            binding.tvName.text = item.status
             binding.imView.setImageResource(item.photo)
             binding.tvTemperature.text = item.temperature+"\u2103"
+            binding.tvSpeed.text = item.speed
             binding.tvCondition.text = item.condition
         }
     }

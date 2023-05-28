@@ -16,14 +16,24 @@
         <item>Minggu</item>
     </string-array>
 
+    <string-array name="data_weather">
+        <item>Cerah</item>
+        <item>Hujan</item>
+        <item>Cerah</item>
+        <item>Hujan Berawan</item>
+        <item>Cerah</item>
+        <item>Cerah</item>
+        <item>Hujan Berawan</item>
+    </string-array>
+
     <integer-array name="data_img_weather">
         <item>@drawable/baseline_wb_sunny_70</item>
         <item>@drawable/hujan</item>
         <item>@drawable/baseline_wb_sunny_70</item>
-        <item>@drawable/hujan</item>
+        <item>@drawable/hujanberawan</item>
         <item>@drawable/baseline_wb_sunny_70</item>
         <item>@drawable/baseline_wb_sunny_70</item>
-        <item>@drawable/hujan</item>
+        <item>@drawable/hujanberawan</item>
     </integer-array>
 
     <string-array name="data_temperature">
@@ -40,19 +50,29 @@
         <item>Bisa Berlayar</item>
         <item>Tidak Bisa Berlayar</item>
         <item>Bisa Berlayar</item>
-        <item>Tidak Bisa Berlayar</item>
         <item>Bisa Berlayar</item>
         <item>Bisa Berlayar</item>
-        <item>Tidak Bisa Berlayar</item>
+        <item>Bisa Berlayar</item>
+        <item>Bisa Berlayar</item>
+    </string-array>
+
+    <string-array name="data_speed">
+        <item>8km/h</item>
+        <item>18km/h</item>
+        <item>10km/h</item>
+        <item>11km/h</item>
+        <item>5km/h</item>
+        <item>9km/h</item>
+        <item>8km/h</item>
     </string-array>
 
     <integer-array name="data_img_weather_after">
-        <item>@drawable/baseline_wb_sunny_70</item>
-        <item>@drawable/baseline_wb_sunny_70</item>
-        <item>@drawable/baseline_wb_sunny_70</item>
+        <item>@drawable/hujan</item>
         <item>@drawable/hujan</item>
         <item>@drawable/baseline_wb_sunny_70</item>
-        <item>@drawable/baseline_wb_sunny_70</item>
+        <item>@drawable/hujan</item>
+        <item>@drawable/hujanberawan</item>
+        <item>@drawable/hujanberawan</item>
         <item>@drawable/hujan</item>
     </integer-array>
 
@@ -75,4 +95,25 @@
         <item>Bisa Berlayar</item>
         <item>Tidak Bisa Berlayar</item>
     </string-array>
+
+    <string-array name="data_weather_after">
+        <item>Hujan</item>
+        <item>Hujan</item>
+        <item>Cerah</item>
+        <item>Hujan</item>
+        <item>Hujan Berawan</item>
+        <item>Hujan Berawan</item>
+        <item>Hujan</item>
+    </string-array>
+
+    <string-array name="data_speed_after">
+        <item>18km/h</item>
+        <item>8km/h</item>
+        <item>5km/h</item>
+        <item>11km/h</item>
+        <item>12km/h</item>
+        <item>9km/h</item>
+        <item>8km/h</item>
+    </string-array>
+
 </resources>

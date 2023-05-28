@@ -48,12 +48,14 @@ class WeatherBeforeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.rvWeather.layoutManager = LinearLayoutManager(requireActivity())
         val dataDay = resources.getStringArray(R.array.data_day)
+        val dataStatus = resources.getStringArray(R.array.data_weather)
         val dataImgWeather = resources.obtainTypedArray(R.array.data_img_weather)
         val dataTemperature = resources.getStringArray(R.array.data_temperature)
         val dataCondition = resources.getStringArray(R.array.data_condition)
+        val dataSpeed = resources.getStringArray(R.array.data_speed)
         val listWeather = ArrayList<WeatherInfo>()
         for (i in dataDay.indices) {
-            val weather = WeatherInfo(dataDay[i], dataImgWeather.getResourceId(i, -1), dataTemperature[i], dataCondition[i])
+            val weather = WeatherInfo(dataDay[i], dataStatus[i], dataImgWeather.getResourceId(i, -1), dataTemperature[i], dataCondition[i],dataSpeed[i])
             listWeather.add(weather)
         }
         binding.rvWeather.adapter = WeatherDetailAdapter(listWeather)

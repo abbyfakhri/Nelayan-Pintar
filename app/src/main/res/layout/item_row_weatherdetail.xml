@@ -6,13 +6,26 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <TextView
+        android:id="@+id/tvDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="tes" />
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imView"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_marginTop="28dp"
         android:layout_marginStart="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvDay"
         tools:src="@drawable/ic_launcher_background" />
 
     <TextView
@@ -42,6 +55,19 @@
         tools:text="tes" />
 
     <TextView
+        android:id="@+id/tvSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imView"
+        app:layout_constraintTop_toTopOf="@+id/tvTemperature"
+        tools:text="tes" />
+
+    <TextView
         android:id="@+id/tvCondition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,7 +75,7 @@
         android:textAppearance="?android:attr/textAppearanceListItemSmall"
         android:textSize="16sp"
         android:textColor="@color/white"
-        app:layout_constraintStart_toEndOf="@+id/imView"
+        app:layout_constraintStart_toEndOf="@+id/tvSpeed"
         app:layout_constraintTop_toTopOf="@+id/tvName"
         tools:text="tes" />
 
