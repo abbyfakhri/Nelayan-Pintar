@@ -12,4 +12,5 @@
     <color name="secondary_blue">#30A2FF</color>
     <color name="main_yellow">#FFE7A0</color>
     <color name="secondary_yellow">#FFE7A0</color>
+    <color name="yellow_container">#33fef6b8</color>
 </resources>
