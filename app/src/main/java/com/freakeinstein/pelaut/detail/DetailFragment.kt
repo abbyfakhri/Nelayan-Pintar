@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.StringRes
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.freakeinstein.pelaut.R
 import com.freakeinstein.pelaut.databinding.FragmentDetailBinding
 import com.google.android.material.tabs.TabLayoutMediator
@@ -27,6 +26,7 @@ class DetailFragment : Fragment() {
     private var param2: String? = null
     private lateinit var binding: FragmentDetailBinding
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -39,6 +39,7 @@ class DetailFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        // Inflate the layout for this fragment
         // Inflate the layout for this fragment
         binding = FragmentDetailBinding.inflate(inflater, container, false)
         // Inflate the layout for this fragment
@@ -57,6 +58,12 @@ class DetailFragment : Fragment() {
 
     }
 
+    @StringRes
+    private val TAB_TITLES = intArrayOf(
+        R.string.tab_text_1,
+        R.string.tab_text_2
+    )
+
     companion object {
         /**
          * Use this factory method to create a new instance of
@@ -67,13 +74,6 @@ class DetailFragment : Fragment() {
          * @return A new instance of fragment DetailFragment.
          */
         // TODO: Rename and change types and number of parameters
-
-        @StringRes
-        private val TAB_TITLES = intArrayOf(
-            R.string.tab_text_1,
-            R.string.tab_text_2
-        )
-
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             DetailFragment().apply {

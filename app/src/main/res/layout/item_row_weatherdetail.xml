@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:padding="8dp"
+    android:layout_margin="10dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -13,6 +14,8 @@
         android:textAppearance="?android:attr/textAppearanceListItemSmall"
         android:textColor="@color/white"
         android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
         app:layout_constraintBottom_toTopOf="@+id/imView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,6 +39,8 @@
         android:layout_marginTop="16dp"
         android:textAppearance="?android:attr/textAppearanceListItemSmall"
         android:textSize="16sp"
+        android:fontFamily="@font/poppins"
+
         android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/imView"
         app:layout_constraintTop_toTopOf="@+id/imView"
@@ -50,6 +55,8 @@
         android:textAppearance="?android:attr/textAppearanceListItemSmall"
         android:textColor="@color/white"
         android:textSize="16sp"
+        android:fontFamily="@font/poppins"
+
         app:layout_constraintStart_toEndOf="@+id/imView"
         app:layout_constraintTop_toTopOf="@+id/tvName"
         tools:text="tes" />
@@ -63,17 +70,21 @@
         android:textAppearance="?android:attr/textAppearanceListItemSmall"
         android:textColor="@color/white"
         android:textSize="16sp"
+        android:fontFamily="@font/poppins"
+
         app:layout_constraintStart_toEndOf="@+id/imView"
         app:layout_constraintTop_toTopOf="@+id/tvTemperature"
         tools:text="tes" />
 
     <TextView
         android:id="@+id/tvCondition"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:textAppearance="?android:attr/textAppearanceListItemSmall"
         android:textSize="16sp"
+        android:fontFamily="@font/poppins"
+
         android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/tvSpeed"
         app:layout_constraintTop_toTopOf="@+id/tvName"
